@@ -26,5 +26,5 @@ function showSweetAlert($icon, $title, $text, $confirmButtonColor, $tujuan)
 }
 
 include '../../../app/config/koneksi.php';
-mysqli_query($koneksi, "DELETE FROM tb_mail WHERE id_mail = '$_GET[id]'") or die(mysqli_error($koneksi));
+mysqli_query($koneksi, "DELETE FROM maintenance WHERE id_maintenance = '$_GET[id]'") or die(mysqli_error($koneksi));
 showSweetAlert('success', 'Success', 'Data Berhasil di Hapus', '#dc3545', $tujuan_index);
