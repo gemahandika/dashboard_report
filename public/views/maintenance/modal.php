@@ -11,7 +11,7 @@ $time = date("H:i");
 <!-- Modal Edit -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <form action="../../../app/controller/maintenance.php" method="post">
+        <form action="../../../app/controller/Maintenance.php" method="post">
             <div class="modal-content">
                 <div class="modal-header btn-info">
                     <h5 class="modal-title fs-5" id="exampleModalLabel" style="color: white;">CREATE DATA MAINTENANCE</h5>

@@ -17,7 +17,7 @@ if (isset($_POST['add_maintenance'])) {
     // Masukan data ke tabel mail
     mysqli_query($koneksi, "INSERT INTO maintenance ( cabang, type_maintenance , jenis_maintenance , unit, pic_request, tgl_request, problem, tgl_solved, pic_proses, keterangan) 
     VALUES( '$cabang','$type','$jenis', '$unit', '$pic_req', '$date_req', '$problem','$date_solved','$pic_proses','$keterangan')");
-    showSweetAlert('success', 'Sukses', $pesan_ok, '#3085d6', '../../public/views/maintenance/');
+    showSweetAlert('success', 'Sukses', $pesan_ok, '#3085d6', '../../public/views/maintenance/index.php');
 } else if (isset($_POST['add_unit'])) {
     $nama_unit = trim(mysqli_real_escape_string($koneksi, $_POST['nama_unit']));
 
@@ -25,11 +25,11 @@ if (isset($_POST['add_maintenance'])) {
     $check_query = "SELECT * FROM tb_unit WHERE nama_unit = '$nama_unit'";
     $check_result = $koneksi->query($check_query);
     if ($check_result->num_rows > 0) {
-        showSweetAlert('warning', 'Oops...', $pesan, '#3085d6', '../../public/views/maintenance/');
+        showSweetAlert('warning', 'Oops...', $pesan, '#3085d6', '../../public/views/maintenance/index.php');
     } else {
         // Masukan data ke tabel mail
         mysqli_query($koneksi, "INSERT INTO tb_unit (nama_unit) 
     VALUES( '$nama_unit')");
-        showSweetAlert('success', 'Sukses', $pesan_ok, '#3085d6', '../../public/views/maintenance/');
+        showSweetAlert('success', 'Sukses', $pesan_ok, '#3085d6', '../../public/views/maintenance/index.php');
     }
 }
