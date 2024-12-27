@@ -1,4 +1,6 @@
 <?php
+session_name("dashboard_report_session");
+session_start();
 include '../../../app/_include/header_include.php';
 ?>
 <!DOCTYPE html>
