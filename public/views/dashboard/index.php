@@ -7,7 +7,7 @@ include '../../../app/_include/home_include.php';
       <div class="row column_title">
          <div class="col-md-12">
             <div class="page_title">
-               <h2>Dashboard</h2>
+               <h2>Dashboard 2</h2>
             </div>
          </div>
       </div>
