@@ -1,5 +1,5 @@
 <?php
-include("../../app/config/koneksi.php");
+session_name("dashboard_report_session");
 session_start();
 
 // Pengecekan Level Akses
