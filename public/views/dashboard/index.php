@@ -1,5 +1,7 @@
 <?php
-include '../../../app/_include/home_include.php';
+include '../header.php';
+include '../../../app/models/Counter_models.php';
+include '../../../app/models/Maintenance_models.php';
 ?>
 <!-- dashboard inner -->
 <div class="midde_cont">
