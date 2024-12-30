@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database lokal
-$koneksi = mysqli_connect('localhost', 'root', '', 'jnee6778_itbase');
+$koneksi = mysqli_connect('localhost', 'jnee6778_mesit', 'Jnemes2017', 'jnee6778_itbase');
 
 // Periksa apakah koneksi berhasil
 if (!$koneksi) {
